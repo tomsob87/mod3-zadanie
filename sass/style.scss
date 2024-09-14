@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variables
+$accent-color: #FED238;
+$hand-written: "Indie Flower", cursive;
+
+// Global
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 200vh;
+}
+
+// Header
+
+header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/desk.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        .logo {
+            color: $accent-color;
+            font-family: $hand-written;
+            font-size: 32px;
+            letter-spacing: 6px;
+        }
+        .menu ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    padding-left: 34px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .hero {
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        h1 {
+            font-family: $hand-written;
+            font-size: 38px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-size: 52px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        button {
+            background-color: $accent-color;
+            padding: 14px 40px;
+            font-size: 18px;
+            border: none;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}
+
