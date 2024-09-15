@@ -43,10 +43,10 @@ header {
             list-style: none;
             li {
                 display: inline-block;
+                padding: 10px 12px;
                 a {
                     text-decoration: none;
                     color: #fff;
-                    padding-left: 34px;
                     text-transform: uppercase;
                 }
             }
@@ -55,6 +55,7 @@ header {
     .hero {
         display: flex;
         height: 90vh;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -80,3 +81,14 @@ header {
     }
 }
 
+@media (orientation: portrait) {
+    header {
+        nav {
+            text-align: center;
+            flex-direction: column;
+            .logo {
+                font-size: 38px;
+            }
+        }
+    }    
+}
