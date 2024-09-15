@@ -188,5 +188,16 @@ section.portfolio {
                 margin-bottom: 28px;
             }
         }
+    }
+    section.portfolio {
+        padding: 50px 10px;
+        .portfolio-list {
+            flex-direction: column;
+            .portfolio-item {
+                .item-photo {
+                    height: 200px;
+                }
+            }
+        }
     }    
 }
