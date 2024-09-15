@@ -156,5 +156,13 @@ header {
                 font-size: 38px;
             }
         }
+    }
+    section.services {
+        .services-list {
+            flex-direction: column;
+            .service-item {
+                margin-bottom: 28px;
+            }
+        }
     }    
 }
